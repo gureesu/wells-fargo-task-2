@@ -11,76 +11,76 @@ public class Advisor {
 
     @Id
     @GeneratedValue()
-    private long advisorId;
+    private long Advisor_ID;
 
     @Column(nullable = false)
-    private String firstName;
+    private String First_Name;
 
     @Column(nullable = false)
-    private String lastName;
+    private String Last_Name;
 
     @Column(nullable = false)
-    private String address;
+    private String Address;
 
     @Column(nullable = false)
-    private String phone;
+    private String Phone;
 
     @Column(nullable = false)
-    private String email;
+    private String Email;
 
     protected Advisor() {
 
     }
 
-    public Advisor(String firstName, String lastName, String address, String phone, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.phone = phone;
-        this.email = email;
+    public Advisor(String First_Name, String Last_Name, String Address, String Phone, String Email) {
+        this.First_Name = First_Name;
+        this.Last_Name = Last_Name;
+        this.Address = Address;
+        this.Phone = Phone;
+        this.Email = Email;
     }
 
-    public Long getAdvisorId() {
-        return advisorId;
+    public Long getAdvisor_ID() {
+        return Advisor_ID;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirst_Name() {
+        return First_Name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirst_Name(String First_Name) {
+        this.First_Name = First_Name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLast_Name() {
+        return Last_Name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_Name(String Last_Name) {
+        this.Last_Name = Last_Name;
     }
 
     public String getAddress() {
-        return address;
+        return Address;
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        this.Address = Address;
     }
 
     public String getPhone() {
-        return phone;
+        return Phone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 }
